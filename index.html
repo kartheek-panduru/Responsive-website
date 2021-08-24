@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Website</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="transperatn logo.png" alt="logo" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li> <a href="">Home</a> </li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="menu.png" alt="menu" class="menu" onclick="togglemenu()">
+        </div>
+
+        <div class="row">
+            <div class="col1">
+                <h2>Puchki. <br></h2>
+                <h3>Product & SASS HTML5 Landing & Multiple Template</h3>
+                <button>Purchase</button>
+            </div>
+            <div class="col2">
+                <img src="img1.png" alt="image" class="image">
+            </div>
+        </div>
+
+        <div class="socialLinks">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+    </div>
+
+    <script>
+
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight = "180px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
+
+</body>
+</html>
